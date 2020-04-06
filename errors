@@ -1,0 +1,40 @@
+
+Phase 2.7  Design Feasibility Check
+ERROR:Place:864 - Incompatible IOB's are locked to the same bank 2
+   Conflicting IO Standards are:
+   IO Standard 1: Name = LVCMOS33, VREF = NR, VCCO = 3.30, TERM = NONE, DIR =
+   OUTPUT, DRIVE_STR = 24
+   List of locked IOB's:
+   	FMCIO<100>
+   	FMCIO<101>
+   	FMCIO<102>
+   	FMCIO<103>
+   	FMCIO<104>
+   	FMCIO<105>
+   	FMCIO<106>
+   	FMCIO<107>
+   	FMCIO<108>
+   	FMCIO<109>
+   	FMCIO<91>
+   	FMCIO<92>
+   	FMCIO<93>
+   	FMCIO<94>
+   	FMCIO<95>
+   	FMCIO<96>
+   	FMCIO<97>
+   	FMCIO<98>
+   	FMCIO<99>
+
+   IO Standard 2: Name = LVCMOS25, VREF = NR, VCCO = 2.50, TERM = NONE, DIR =
+   OUTPUT, DRIVE_STR = 12
+   List of locked IOB's:
+   	IO_75_LED_D1
+   	USER_SMA_CLK_P
+
+   These IO Standards are incompatible due to VCCO mismatch.
+
+Phase 2.7  Design Feasibility Check (Checksum:473e2f9d) REAL time: 4 secs 
+
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
