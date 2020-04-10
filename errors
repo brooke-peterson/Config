@@ -1,40 +1,108 @@
 
-Phase 2.7  Design Feasibility Check
-ERROR:Place:864 - Incompatible IOB's are locked to the same bank 2
-   Conflicting IO Standards are:
-   IO Standard 1: Name = LVCMOS33, VREF = NR, VCCO = 3.30, TERM = NONE, DIR =
-   OUTPUT, DRIVE_STR = 24
-   List of locked IOB's:
-   	FMCIO<100>
-   	FMCIO<101>
-   	FMCIO<102>
-   	FMCIO<103>
-   	FMCIO<104>
-   	FMCIO<105>
-   	FMCIO<106>
-   	FMCIO<107>
-   	FMCIO<108>
-   	FMCIO<109>
-   	FMCIO<91>
-   	FMCIO<92>
-   	FMCIO<93>
-   	FMCIO<94>
-   	FMCIO<95>
-   	FMCIO<96>
-   	FMCIO<97>
-   	FMCIO<98>
-   	FMCIO<99>
+Welcome to iMPACT
+iMPACT Version: 14.7
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set to default 6 MHz regardless of explicit arguments supplied for setting the baud rates
+PROGRESS_START - Starting Operation.
+ Cable is LOCKED. Retrying...
+ The cable is being used by another application.
+ Please try opening the cable connection at a later time.
+Connecting to cable (Parallel Port - parport0).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ parport0: 
+ parport1: 
+ parport2: 
+ parport3: 
+ LPT1 Base Address set from env variable = 0.
+ LPT base address = 0000h.
+ LPT1 Ecp Address set from env variable = 400.
+ ECP base address = 0400h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+Connecting to cable (Parallel Port - parport1).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT2 Base Address set from env variable = 10.
+ LPT base address = 0010h.
+ LPT2 Ecp Address set from env variable = 410.
+ ECP base address = 0410h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+Connecting to cable (Parallel Port - parport2).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT3 Base Address set from env variable = 20.
+ LPT base address = 0020h.
+ LPT3 Ecp Address set from env variable = 420.
+ ECP base address = 0420h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+Connecting to cable (Parallel Port - parport3).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT4 Base Address set from env variable = 30.
+ LPT base address = 0030h.
+ LPT4 Ecp Address set from env variable = 430.
+ ECP base address = 0430h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =     10 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set to default 6 MHz regardless of explicit arguments supplied for setting the baud rates
+PROGRESS_START - Starting Operation.
+ Cable is LOCKED. Retrying...
+ The cable is being used by another application.
+ Please try opening the cable connection at a later time.
+Connecting to cable (Parallel Port - parport0).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT1 Base Address set from env variable = 0.
+ LPT base address = 0000h.
+ LPT1 Ecp Address set from env variable = 400.
+ ECP base address = 0400h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+Connecting to cable (Parallel Port - parport1).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT2 Base Address set from env variable = 10.
+ LPT base address = 0010h.
+ LPT2 Ecp Address set from env variable = 410.
+ ECP base address = 0410h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+Connecting to cable (Parallel Port - parport2).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT3 Base Address set from env variable = 20.
+ LPT base address = 0020h.
+ LPT3 Ecp Address set from env variable = 420.
+ ECP base address = 0420h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+Connecting to cable (Parallel Port - parport3).
+ libusb-driver.so version: 2020-04-06 09:33:15.
+ LPT4 Base Address set from env variable = 30.
+ LPT base address = 0030h.
+ LPT4 Ecp Address set from env variable = 430.
+ ECP base address = 0430h.
+LPT port is already in use. rc = FFFFFFFFh
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =     10 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !
 
-   IO Standard 2: Name = LVCMOS25, VREF = NR, VCCO = 2.50, TERM = NONE, DIR =
-   OUTPUT, DRIVE_STR = 12
-   List of locked IOB's:
-   	IO_75_LED_D1
-   	USER_SMA_CLK_P
-
-   These IO Standards are incompatible due to VCCO mismatch.
-
-Phase 2.7  Design Feasibility Check (Checksum:473e2f9d) REAL time: 4 secs 
-
-Total REAL time to Placer completion: 4 secs 
-Total CPU  time to Placer completion: 4 secs 
-ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+Terminal output:
+Can't open /dev/parport0: No such file or directory
+Can't open /dev/parport1: No such file or directory
+Can't open /dev/parport2: No such file or directory
+Can't open /dev/parport3: No such file or directory
+Can't open /dev/parport0: No such file or directory
+Can't open /dev/parport1: No such file or directory
+Can't open /dev/parport2: No such file or directory
+Can't open /dev/parport3: No such file or directory
